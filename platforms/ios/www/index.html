@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Planetary</title>
+    <meta name="description" content="Planetary">
+    <script src="js/aframe.min.js"></script>
+    <script src="js/aframe-environment-component.min.js"></script>
+    <script src="js/aframe-particle-system-component.min.js"></script>
+    <script src="js/aframe-gif-component.min.js"></script>
+    <script src="js/aframe-gif-shader.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <img id="sunTexture" src="img/sun.jpg">
+        <img id="sunAniTexture" src="img/sun_motion.gif">
+        <img id="mercuryTexture" src="img/mercury.jpg">
+        <img id="mercuryAniTexture" src="img/mercury_motion.gif">
+        <img id="venusTexture" src="img/venus.jpg">
+        <img id="venusAniTexture" src="img/venus_motion.gif">
+        <img id="earthTexture" src="img/earth.jpg">
+        <img id="earthAniTexture" src="img/earth_motion.gif">
+        <img id="moonTexture" src="img/moon.jpg">
+        <img id="moonAniTexture" src="img/moon_motion.gif">
+        <img id="marsTexture" src="img/mars.jpg">
+        <img id="marsAniTexture" src="img/mars_motion.gif">
+        <img id="jupiterTexture" src="img/jupiter.jpg">
+        <img id="jupiterAniTexture" src="img/jupiter_motion.gif">
+        <img id="saturnTexture" src="img/saturn.jpg">
+        <img id="saturnAniTexture" src="img/saturn_motion.gif">
+        <img id="uranusTexture" src="img/uranus.jpg">
+        <img id="uranusAniTexture" src="img/uranus_motion.gif">
+        <img id="neptuneTexture" src="img/neptune.jpg">
+        <img id="neptuneAniTexture" src="img/neptune_motion.gif">
+        <img id="plutoTexture" src="img/pluto.jpg">
+        <img id="plutoAniTexture" src="img/pluto_motion.gif">
+      </a-assets>
+
+            <!-- Start Mercury -->
+          <a-sphere position="-8 0 3" src="#mercuryTexture" radius="2" segments-height="30" scale="0.3 0.3 0.3">
+          </a-sphere>
+            <!-- End Mercury -->
+            <!-- Start Venus -->
+          <a-sphere position="-5 0 3" src="#venusTexture" radius="2" segments-height="30">
+          </a-sphere>
+            <!-- End Venus -->
+            <!-- Start Planet Earth -->
+            <a-sphere position="0 0 3" src="#earthTexture" radius="2" segments-height="30">
+          <a-animation attribute="rotation"
+            dur="10000"
+            to="0 360 0"
+            ease="linear"
+            repeat="indefinite"
+          </a-animation>
+          <a-animation attribute="scale" begin="mouseenter" dur="300" to="2.3 2.3 2.3"></a-animation>
+          <a-animation attribute="scale" begin="mouseleave" dur="300" to="2 2 2"></a-animation>
+          <a-animation attribute="rotation" begin="click" dur="2000" to="360 405 45"></a-animation>
+
+
+            <!-- Start Earth's moon -->
+            <a-sphere position="0.7 0.3 3" src="#moonTexture" radius="2" segments-height="30" scale="0.27 0.27 0.27">
+            </a-sphere>
+
+            </a-sphere>
+            <!-- Start Mars -->
+            <a-sphere position="7 0 3" src="#marsTexture" radius="2" segments-height="30" scale="0.75 0.75 0.75">
+            </a-sphere>
+            <!-- End Mars-->
+        
+            <!-- Start Jupiter -->
+            <!-- <a-entity geometry="primitive:sphere" material="shader:gif; src:url(img/jupiter_motion.gif);" gif="" position="20 0 3" radius="2" segments-height="30" scale="4.25 4.25 4.25" > -->
+        <a-sphere position="20 0 3" src="#jupiterTexture" radius="2" segments-height="30" scale="4.25 4.25 4.25">
+              <a-animation attribute="rotation"
+                  dur="12000"
+                  to="0 360 0"
+                  ease="linear"
+                  repeat="indefinite">
+                </a-animation>
+            <!-- </a-entity> -->
+             </a-sphere> 
+            <!-- End Jupiter -->
+
+            <!-- Start Saturn -->
+            <a-sphere position="40 0 3" src="#saturnTexture" radius="2" segments-height="30" scale="3.25 3.25 3.25">
+            </a-sphere>
+            <!-- End Saturn -->
+
+            <!-- Start Uranus -->
+            <a-sphere position="54 0 -3" src="#uranusTexture" radius="2" segments-height="30" scale="3 3 3">
+            </a-sphere>
+            <!-- End Uranus -->
+            <!-- Start Neptune -->
+            <a-sphere position="62 0 3" src="#neptuneTexture" radius="2" segments-height="30" scale="2 2 2">
+            </a-sphere>
+            <!-- End Neptune -->
+            <!-- Start Pluto -->
+            <a-sphere position="67 0 5" src="#plutoTexture" radius="2" segments-height="30" scale="0.5 0.5 0.5">
+            </a-sphere>
+            <!-- End Pluto -->
+
+<!--  <a-animation attribute="rotation"
+        dur="10000"
+        to="0 360 0"
+        ease="linear"
+        repeat="indefinite"
+      </a-animation> --!>
+
+      <!-- end Earth's moon -->
+
+      <a-camera position='0 0 20' user-height='0'>
+         <a-cursor></a-cursor>
+       </a-camera>
+       <a-sky src="img/galaxy.jpg"></a-sky>
+
+    </a-scene>
+  </body>
+</html>
