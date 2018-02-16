@@ -8,6 +8,7 @@
         Jim Christian
     </author>
     <content src="index.html" />
+     <icon src="icon.png" />
     <plugin name="cordova-plugin-whitelist" spec="1" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
@@ -22,7 +23,6 @@
     <platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
-     <icon src="icon.png" />
     </platform>
     <engine name="ios" spec="~4.5.4" />
 </widget>
