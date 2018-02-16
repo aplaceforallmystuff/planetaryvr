@@ -4,12 +4,12 @@
     <description>
         A sample a-frame application wrapped in a mobile app.
     </description>
-    <author email="jchristian@greenapplesea.com href="http://greenapplesea.com">
+    <author email="hello@jimchristian.net" href="http://papamakes.com">
         Jim Christian
     </author>
     <content src="index.html" />
-     <icon src="icon.png" />
     <plugin name="cordova-plugin-whitelist" spec="1" />
+    <icon src="icon.png" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
