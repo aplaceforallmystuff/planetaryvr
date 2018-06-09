@@ -37,11 +37,29 @@
       </a-assets>
 
             <!-- Start Mercury -->
-          <a-sphere position="-8 0 3" src="#mercuryTexture" radius="2" segments-height="30" scale="0.3 0.3 0.3">
+          <a-sphere position="-15 0 3" src="#mercuryTexture" radius="2" segments-height="30" scale="0.4 0.4 0.4">
+            <a-animation attribute="rotation"
+              dur="10000"
+              to="0 360 0"
+              ease="linear"
+              repeat="indefinite"
+            </a-animation>
+            <a-animation attribute="scale" begin="mouseenter" dur="300" to="2.3 2.3 2.3"></a-animation>
+            <a-animation attribute="scale" begin="mouseleave" dur="300" to="2 2 2"></a-animation>
+            <a-animation attribute="rotation" begin="click" dur="2000" to="360 405 45"></a-animation>
           </a-sphere>
             <!-- End Mercury -->
             <!-- Start Venus -->
-          <a-sphere position="-5 0 3" src="#venusTexture" radius="2" segments-height="30">
+          <a-sphere position="-10 0 3" src="#venusTexture" radius="2" segments-height="30" scale="0.95 0.95 0.95">
+            <a-animation attribute="rotation"
+              dur="10000"
+              to="0 360 0"
+              ease="linear"
+              repeat="indefinite"
+            </a-animation>
+            <a-animation attribute="scale" begin="mouseenter" dur="300" to="2.3 2.3 2.3"></a-animation>
+            <a-animation attribute="scale" begin="mouseleave" dur="300" to="2 2 2"></a-animation>
+            <a-animation attribute="rotation" begin="click" dur="2000" to="360 405 45"></a-animation>
           </a-sphere>
             <!-- End Venus -->
             <!-- Start Planet Earth -->
@@ -63,13 +81,22 @@
 
             </a-sphere>
             <!-- Start Mars -->
-            <a-sphere position="7 0 3" src="#marsTexture" radius="2" segments-height="30" scale="0.75 0.75 0.75">
+            <a-sphere position="10 0 3" src="#marsTexture" radius="2" segments-height="30" scale="0.56 0.53 0.56">
+              <a-animation attribute="rotation"
+                dur="10000"
+                to="0 360 0"
+                ease="linear"
+                repeat="indefinite"
+              </a-animation>
+              <a-animation attribute="scale" begin="mouseenter" dur="300" to="2.3 2.3 2.3"></a-animation>
+              <a-animation attribute="scale" begin="mouseleave" dur="300" to="2 2 2"></a-animation>
+              <a-animation attribute="rotation" begin="click" dur="2000" to="360 405 45"></a-animation>
             </a-sphere>
             <!-- End Mars-->
-        
+
             <!-- Start Jupiter -->
             <!-- <a-entity geometry="primitive:sphere" material="shader:gif; src:url(img/jupiter_motion.gif);" gif="" position="20 0 3" radius="2" segments-height="30" scale="4.25 4.25 4.25" > -->
-        <a-sphere position="20 0 3" src="#jupiterTexture" radius="2" segments-height="30" scale="4.25 4.25 4.25">
+        <a-sphere position="50 0 3" src="#jupiterTexture" radius="2" segments-height="30" scale="11.2 11.2 11.2">
               <a-animation attribute="rotation"
                   dur="12000"
                   to="0 360 0"
@@ -77,24 +104,60 @@
                   repeat="indefinite">
                 </a-animation>
             <!-- </a-entity> -->
-             </a-sphere> 
+             </a-sphere>
             <!-- End Jupiter -->
 
             <!-- Start Saturn -->
-            <a-sphere position="40 0 3" src="#saturnTexture" radius="2" segments-height="30" scale="3.25 3.25 3.25">
+            <a-sphere position="116 0 3" src="#saturnTexture" radius="2" segments-height="30" scale="9.5 9.5 9.5">
+              <a-animation attribute="rotation"
+                dur="10000"
+                to="0 360 0"
+                ease="linear"
+                repeat="indefinite"
+              </a-animation>
+              <a-animation attribute="scale" begin="mouseenter" dur="300" to="2.3 2.3 2.3"></a-animation>
+              <a-animation attribute="scale" begin="mouseleave" dur="300" to="2 2 2"></a-animation>
+              <a-animation attribute="rotation" begin="click" dur="2000" to="360 405 45"></a-animation>
             </a-sphere>
             <!-- End Saturn -->
 
             <!-- Start Uranus -->
-            <a-sphere position="54 0 -3" src="#uranusTexture" radius="2" segments-height="30" scale="3 3 3">
+            <a-sphere position="130 0 -3" src="#uranusTexture" radius="2" segments-height="30" scale="4 4 4">
+              <a-animation attribute="rotation"
+                dur="10000"
+                to="0 360 0"
+                ease="linear"
+                repeat="indefinite"
+              </a-animation>
+              <a-animation attribute="scale" begin="mouseenter" dur="300" to="2.3 2.3 2.3"></a-animation>
+              <a-animation attribute="scale" begin="mouseleave" dur="300" to="2 2 2"></a-animation>
+              <a-animation attribute="rotation" begin="click" dur="2000" to="360 405 45"></a-animation>
             </a-sphere>
             <!-- End Uranus -->
             <!-- Start Neptune -->
-            <a-sphere position="62 0 3" src="#neptuneTexture" radius="2" segments-height="30" scale="2 2 2">
+            <a-sphere position="62 0 3" src="#neptuneTexture" radius="2" segments-height="30" scale="3.9 3.9 3.9">
+              <a-animation attribute="rotation"
+                dur="10000"
+                to="0 360 0"
+                ease="linear"
+                repeat="indefinite"
+              </a-animation>
+              <a-animation attribute="scale" begin="mouseenter" dur="300" to="2.3 2.3 2.3"></a-animation>
+              <a-animation attribute="scale" begin="mouseleave" dur="300" to="2 2 2"></a-animation>
+              <a-animation attribute="rotation" begin="click" dur="2000" to="360 405 45"></a-animation>
             </a-sphere>
             <!-- End Neptune -->
             <!-- Start Pluto -->
-            <a-sphere position="67 0 5" src="#plutoTexture" radius="2" segments-height="30" scale="0.5 0.5 0.5">
+            <a-sphere position="67 0 5" src="#plutoTexture" radius="2" segments-height="30" scale="0.16 0.16 0.16">
+              <a-animation attribute="rotation"
+                dur="10000"
+                to="0 360 0"
+                ease="linear"
+                repeat="indefinite"
+              </a-animation>
+              <a-animation attribute="scale" begin="mouseenter" dur="300" to="2.3 2.3 2.3"></a-animation>
+              <a-animation attribute="scale" begin="mouseleave" dur="300" to="2 2 2"></a-animation>
+              <a-animation attribute="rotation" begin="click" dur="2000" to="360 405 45"></a-animation>
             </a-sphere>
             <!-- End Pluto -->
 
@@ -107,7 +170,7 @@
 
       <!-- end Earth's moon -->
 
-      <a-camera position='0 0 20' user-height='0'>
+      <a-camera position='50 0 50' user-height='0'>
          <a-cursor></a-cursor>
        </a-camera>
        <a-sky src="img/galaxy.jpg"></a-sky>
